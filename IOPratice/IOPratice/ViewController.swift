@@ -39,6 +39,13 @@ class ViewController: UIViewController {
         let result : Int = x + y
         //resultLabel에 있는 text값 (string)에 result 실수(Int)을 넣는다.
         resultLabel.text = String(result)
+    @IBAction func subtractButtonTouched(_ sender: UIButton) {
+            let textX : String = xTextField.text ?? "0"
+            let textY: String = yTextField.text ?? "0"
+            let x : Int = Int(textX) ?? 0
+            let y :  Int = Int(textY) ?? 0
+            let result : Int = x-y
+            resultLabel.text = String(result)
     }
 
 }
